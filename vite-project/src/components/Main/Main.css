@@ -1,0 +1,83 @@
+.main {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+
+.main .nav{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 20px;
+    color: #585858;
+}
+
+.main .nav img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    max-width: 900px;
+    margin:auto
+}
+
+.main .greet{
+    margin: 1vh;
+    font-size: 40px;
+    color: #585858;
+    padding: 20px;
+    font-weight: 500px;
+}
+
+.main .greet span{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+    /* `display:grid` is used to create a grid layout. 
+     * `grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));` is used to define the columns of the grid. 
+     * In this case, it creates a grid with columns that automatically adjust in number to fit the available space. 
+     * The `minmax(180px, 1fr)` means that each column will have a minimum width of 180px and will expand to fill any remaining space (1fr represents a fraction of the available space). 
+     * This will allow the cards to be displayed in a responsive way, with a minimum width of 180px and adjusting to fit the screen size. */
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding:20px
+}
+
+.main .card{
+    height:200px;
+    padding: 15px;
+    background-color: #f0f4f9;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position:absolute;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 10px;
+}
+.main .card p{
+    color:#585858;
+    font-size:17px;
+}
+
+.main .card:hover{
+    background-color: #dfe4ea;
+}
