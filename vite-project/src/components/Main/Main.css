@@ -81,3 +81,51 @@
 .main .card:hover{
     background-color: #dfe4ea;
 }
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 5px 10px;
+    margin: auto;
+}
+
+.search-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 2px;
+}
+
+.search-box img{
+    width: 24px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.search-box input{
+    flex:1;
+    /* flex: 1; Expands the input element to fill the remaining space in the flex container. */
+    border:none;
+    background-color: transparent;
+    outline: none;
+    padding: 8px;
+}
+
+.search-box div{
+    display: flex;
+    gap: 10px;
+}
+
+.main-bottom .bottom-info{
+    font-size: 12px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #585858;
+    padding: 2px 20px;
+}
